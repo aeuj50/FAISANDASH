@@ -51,14 +51,7 @@ if authentication_status:
     def render_powerbi_dashboard():
         # HTML iframe del dashboard de Power BI con centrado
         powerbi_iframe = """
-        <div style="display: flex; justify-content: center; margin-top: 20px;">
-            <iframe title="UXAL CORP_2" 
-                width="1024" 
-                height="612" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiYTNmOGQwMmUtYWVmYy00MjQ0LTliYWEtMzM5NGFhYzE5ZmUyIiwidCI6IjU4NWE0ZDkyLWRiMWQtNGJiYi1iNWFjLWM1Mjk5ZTM4OTRlMyIsImMiOjR9" 
-                frameborder="0" 
-                allowFullScreen="true">
-            </iframe>
+        <iframe title="FAISAN" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiNjUwYzY4ZDQtNTg0Yi00NDdlLWE4YWQtMWU3MGMzZGQ2ZDE5IiwidCI6IjU4NWE0ZDkyLWRiMWQtNGJiYi1iNWFjLWM1Mjk5ZTM4OTRlMyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
         """
         # Usar componentes para incrustar el iframe
         components.html(powerbi_iframe, height=650)
